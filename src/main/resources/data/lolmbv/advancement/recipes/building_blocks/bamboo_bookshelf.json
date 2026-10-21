@@ -27,7 +27,9 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "lolmbv:bamboo_bookshelf"
+        "recipes": [
+          "lolmbv:bamboo_bookshelf"
+        ]
       },
       "trigger": "minecraft:recipe_unlocked"
     }

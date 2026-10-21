@@ -27,7 +27,9 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "lolmbv:birch_bookshelf"
+        "recipes": [
+          "lolmbv:birch_bookshelf"
+        ]
       },
       "trigger": "minecraft:recipe_unlocked"
     }

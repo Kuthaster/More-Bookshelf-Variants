@@ -27,7 +27,9 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "lolmbv:cherry_bookshelf"
+        "recipes": [
+          "lolmbv:cherry_bookshelf"
+        ]
       },
       "trigger": "minecraft:recipe_unlocked"
     }

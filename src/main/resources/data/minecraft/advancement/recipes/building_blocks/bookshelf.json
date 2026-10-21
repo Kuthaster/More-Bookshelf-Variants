@@ -27,7 +27,9 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:bookshelf"
+        "recipes": [
+          "minecraft:bookshelf"
+        ]
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -27,7 +27,9 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "lolmbv:jungle_bookshelf"
+        "recipes": [
+          "lolmbv:jungle_bookshelf"
+        ]
       },
       "trigger": "minecraft:recipe_unlocked"
     }

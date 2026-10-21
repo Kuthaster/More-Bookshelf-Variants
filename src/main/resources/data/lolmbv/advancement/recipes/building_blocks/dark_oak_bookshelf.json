@@ -27,7 +27,9 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "lolmbv:dark_oak_bookshelf"
+        "recipes": [
+          "lolmbv:dark_oak_bookshelf"
+        ]
       },
       "trigger": "minecraft:recipe_unlocked"
     }

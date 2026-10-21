@@ -27,7 +27,9 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "lolmbv:mangrove_bookshelf"
+        "recipes": [
+          "lolmbv:mangrove_bookshelf"
+        ]
       },
       "trigger": "minecraft:recipe_unlocked"
     }

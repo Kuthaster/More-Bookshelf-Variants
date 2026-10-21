@@ -27,7 +27,9 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "lolmbv:warped_bookshelf"
+        "recipes": [
+          "lolmbv:warped_bookshelf"
+        ]
       },
       "trigger": "minecraft:recipe_unlocked"
     }
