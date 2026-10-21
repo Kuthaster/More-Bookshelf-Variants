@@ -1,0 +1,29 @@
+# More Bookshelf Variants — Minecraft 26.3 port (Fabric)
+
+Port of [LieOnLion's More Bookshelf Variants](https://github.com/lieonlion/More-Bookshelf-Variants)
+to Minecraft 26.3, with a Poplar bookshelf added.
+
+## Changes
+- Updated to the 26.x API
+- Added the Poplar Bookshelf
+- Pale Oak bookshelves are now flammable
+- Advancements converted to the 26.3 format
+- Turkish translation added
+- A bug in Polish translation fixed
+- Fixed an issue with loot_tables. Bookshelves now drop themselves with silk touch and drop 3 books when broken normally or survive an explosion.
+
+## About Quad
+The original mod depends on [Quad](https://modrinth.com/mod/quad), which has not been
+released for 26.3. This port therefore does not require Quad. Without it:
+- Bookshelves are not registered as furnace fuel through Quad's tags
+- Crimson and Warped bookshelf item drops are not made fire-proof
+- Vanilla bookshelves are not replaced inside generated structures
+
+Everything else (blocks, recipes, drops, burning) works without it. The data files
+for these features are still included and will take effect if Quad is updated.
+
+## Testing
+Tested on 26.3 with Fabric Loader 0.19.5 and Fabric API 0.164.0
+
+## Licence
+MIT, unchanged. See LICENSE.
