@@ -1,52 +1,34 @@
 {
-    "type": "minecraft:block",
-    "pools": [
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "entries": [
         {
-            "bonus_rolls": 0.0,
-            "entries": [
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "condition": "minecraft:tool/can_silk_touch",
+              "name": "lolmbv:poplar_bookshelf"
+            },
+            {
+              "type": "minecraft:item",
+              "modifier": [
                 {
-                    "type": "minecraft:alternatives",
-                    "children": [
-                        {
-                            "type": "minecraft:item",
-                            "conditions": [
-                                {
-                                    "condition": "minecraft:match_tool",
-                                    "predicate": {
-                                        "predicates": {
-                                            "minecraft:enchantments": [
-                                                {
-                                                    "enchantments": "minecraft:silk_touch",
-                                                    "levels": {
-                                                        "min": 1
-                                                    }
-                                                }
-                                            ]
-                                        }
-                                    }
-                                }
-                            ],
-                            "name": "lolmbv:poplar_bookshelf"
-                        },
-                        {
-                            "type": "minecraft:item",
-                            "functions": [
-                                {
-                                    "add": false,
-                                    "count": 3.0,
-                                    "function": "minecraft:set_count"
-                                },
-                                {
-                                    "function": "minecraft:explosion_decay"
-                                }
-                            ],
-                            "name": "minecraft:book"
-                        }
-                    ]
+                  "type": "minecraft:set_count",
+                  "count": 3
+                },
+                {
+                  "type": "minecraft:explosion_decay"
                 }
-            ],
-            "rolls": 1.0
+              ],
+              "name": "minecraft:book"
+            }
+          ]
         }
-    ],
-    "random_sequence": "minecraft:blocks/bookshelf"
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "minecraft:blocks/bookshelf"
 }
