@@ -76,6 +76,13 @@
         "targets": "minecraft:bookshelf",
         "replacement": "lolmbv:warped_bookshelf"
       }
+    },
+    {
+      "structures": "#quad:is/poplar",
+      "block_replacement": {
+        "targets": "minecraft:bookshelf",
+        "replacement": "lolmbv:poplar_bookshelf"
+      }
     }
   ]
 }
