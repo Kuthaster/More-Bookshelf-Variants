@@ -2,7 +2,7 @@ package dev.lieonlion.lolmbv.init;
 
 import dev.lieonlion.lolmbv.MoreBookshelfVariants;
 import dev.lieonlion.lolmbv.block.MoreBookshelfBlock;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -48,12 +48,14 @@ public class MbvItemInit {
     // **
     public static Item.Properties setProperties(Block block) {
         return new Item.Properties()
-                .setId(ResourceKey.create(Registries.ITEM, BuiltInRegistries.BLOCK.getKey(block))).useBlockDescriptionPrefix();
+                .setId(ResourceKey.create(Registries.ITEM, BuiltInRegistries.BLOCK.getKey(block)))
+                .useBlockDescriptionPrefix();
     }
 
     public static void registerItem(Item item, Item after) {
-        String name = ((MoreBookshelfBlock)((BlockItem) item).getBlock()).woodType + "_bookshelf";
+        String name = ((MoreBookshelfBlock) ((BlockItem) item).getBlock()).woodType + "_bookshelf";
         Registry.register(BuiltInRegistries.ITEM, MoreBookshelfVariants.asId(name), item);
-        ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.FUNCTIONAL_BLOCKS).register(entries -> entries.addAfter(after, item));
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FUNCTIONAL_BLOCKS)
+                .register(entries -> entries.insertAfter(after, item));
     }
 }
