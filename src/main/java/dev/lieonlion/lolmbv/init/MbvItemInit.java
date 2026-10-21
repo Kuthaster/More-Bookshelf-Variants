@@ -25,7 +25,8 @@ public class MbvItemInit {
     public static BlockItem BAMBOO_BOOKSHELF_I = itemFromBlock(MbvBlockInit.BAMBOO_BOOKSHELF);
     public static BlockItem CRIMSON_BOOKSHELF_I = itemFromBlock(MbvBlockInit.CRIMSON_BOOKSHELF);
     public static BlockItem WARPED_BOOKSHELF_I = itemFromBlock(MbvBlockInit.WARPED_BOOKSHELF);
-
+    public static BlockItem POPLAR_BOOKSHELF_I = itemFromBlock(MbvBlockInit.POPLAR_BOOKSHELF);
+    
     public static void registerItems() {
         registerItem(SPRUCE_BOOKSHELF_I, Items.BOOKSHELF);
         registerItem(BIRCH_BOOKSHELF_I, SPRUCE_BOOKSHELF_I);
@@ -38,6 +39,7 @@ public class MbvItemInit {
         registerItem(BAMBOO_BOOKSHELF_I, PALE_OAK_BOOKSHELF_I);
         registerItem(CRIMSON_BOOKSHELF_I, BAMBOO_BOOKSHELF_I);
         registerItem(WARPED_BOOKSHELF_I, CRIMSON_BOOKSHELF_I);
+        registerItem(POPLAR_BOOKSHELF_I, WARPED_BOOKSHELF_I);
     }
 
     // Thank You to Pnku (https://github.com/pnk2u) for making these functions. *

@@ -19,6 +19,7 @@ public class MbvBlockInit {
     public static final MoreBookshelfBlock BAMBOO_BOOKSHELF = new MoreBookshelfBlock(MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "bamboo");
     public static final MoreBookshelfBlock CRIMSON_BOOKSHELF = new MoreBookshelfBlock(MapColor.CRIMSON_STEM, SoundType.NETHER_WOOD, "crimson");
     public static final MoreBookshelfBlock WARPED_BOOKSHELF = new MoreBookshelfBlock(MapColor.WARPED_STEM, SoundType.NETHER_WOOD, "warped");
+    public static  final MoreBookshelfBlock POPLAR_BOOKSHELF = new MoreBookshelfBlock(MapColor.COLOR_LIGHT_GRAY, "poplar");
 
     public static void registerBlocks() {
         registerBlock(SPRUCE_BOOKSHELF);
@@ -32,6 +33,7 @@ public class MbvBlockInit {
         registerBlock(BAMBOO_BOOKSHELF);
         registerBlock(CRIMSON_BOOKSHELF);
         registerBlock(WARPED_BOOKSHELF);
+        registerBlock(POPLAR_BOOKSHELF);
     }
 
     private static void registerBlock(MoreBookshelfBlock block) {

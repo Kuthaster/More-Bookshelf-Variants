@@ -1,0 +1,53 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+        "has_book": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:book"
+                        ]
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "has_planks": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:poplar_planks"
+                        ]
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "has_the_recipe": {
+            "conditions": {
+                "recipes": [
+                    "lolmbv:poplar_bookshelf"
+                ]
+            },
+            "trigger": "minecraft:recipe_unlocked"
+        }
+    },
+    "requirements": [
+        [
+            "has_book",
+            "has_the_recipe"
+        ],
+        [
+            "has_planks",
+            "has_the_recipe"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "lolmbv:poplar_bookshelf"
+        ]
+    },
+    "sends_telemetry_event": false
+}

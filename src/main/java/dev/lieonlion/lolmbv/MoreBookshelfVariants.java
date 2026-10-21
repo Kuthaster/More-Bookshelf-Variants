@@ -28,6 +28,7 @@ public class MoreBookshelfVariants implements ModInitializer {
         registry.add(MbvBlockInit.CHERRY_BOOKSHELF, 30, 20);
         registry.add(MbvBlockInit.PALE_OAK_BOOKSHELF, 30, 20);
         registry.add(MbvBlockInit.BAMBOO_BOOKSHELF, 30, 20);
+        registry.add(MbvBlockInit.POPLAR_BOOKSHELF, 30, 20);
     }
 
     public static Identifier asId(String path) {
